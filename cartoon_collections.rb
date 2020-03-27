@@ -30,6 +30,4 @@ def find_the_cheese(strings)# code an argument here
   strings.detect do |string|
     cheese_types.include?(string)
   end
-
-  end
 end
