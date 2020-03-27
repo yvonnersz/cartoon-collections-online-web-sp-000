@@ -27,13 +27,7 @@ def find_the_cheese(strings)# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
 
-  strings.detect do |string|
-    if string == cheese_types[1]
-      return string
-    elsif string == cheese_types[2]
-      return string
-    elsif string == cheese_types[3]
-      return string
-    end
+  
 
+  strings.detect {|string| string.include?(cheese_types)}
 end
